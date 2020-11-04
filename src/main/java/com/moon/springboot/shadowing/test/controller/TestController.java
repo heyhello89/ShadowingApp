@@ -16,9 +16,8 @@ public class TestController {
     @ResponseBody
     @RequestMapping("/valueTest")
     public String valueTest() {
-        String value = "테스트 Text";
 
-        return value;
+        return "테스트 Text";
     }
 
 }
