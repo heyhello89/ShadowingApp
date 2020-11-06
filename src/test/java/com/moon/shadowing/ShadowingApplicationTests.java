@@ -1,4 +1,4 @@
-package com.moon.springboot.shadowing;
+package com.moon.shadowing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

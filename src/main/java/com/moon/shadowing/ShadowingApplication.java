@@ -1,4 +1,4 @@
-package com.moon.springboot.shadowing;
+package com.moon.shadowing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
