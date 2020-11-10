@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
@@ -22,23 +22,23 @@
     <div id="contents">
     </div>
 
-    <form method="post" action="/">
+    <form th:object="${userMaster}" method="post" action="/">
         User id:<br>
         <label>
-            <input type="text" name="id">
+            <input type="text" th:field="*{id}" name="id">
         </label><br>
         User password:<br>
         <label>
-            <input type="password" name="passwd">
-        </label>
+            <input type="password" th:field="*{passwd}" name="passwd">
+        </label><br>
         User name:<br>
         <label>
-            <input type="text" name="usernaem">
-        </label>
+            <input type="text" th:field="*{user_name}" name="user_name">
+        </label><br>
         User bitrhday(ex:19951226):<br>
         <label>
-            <input type="text" name="birthday">
-        </label>
+            <input type="text" th:field="*{bitrhday}" name="birthday">
+        </label><br>
         <input type="submit" value="Submit">
     </form>
 
